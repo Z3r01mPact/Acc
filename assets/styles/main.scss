@@ -1,0 +1,40 @@
+// Import Bulma's core
+
+// Set your colors
+$primary: #ff5757;
+$primary-invert: #ffffff;
+
+$navbar-breakpoint: 1216px;
+// Setup $colors to use as bulma classes (e.g. 'is-twitter')
+/*$colors: ("white": ($white,
+    $black),
+  "black": ($black,
+    $white),
+  "light": ($light,
+    $light-invert),
+  "dark": ($dark,
+    $dark-invert),
+  "primary": ($primary,
+    $primary-invert),
+  "info": ($info,
+    $info-invert),
+  "success": ($success,
+    $success-invert),
+  "warning": ($warning,
+    $warning-invert),
+  "danger": ($danger,
+    $danger-invert),
+  "twitter": ($twitter,
+    $twitter-invert));
+*/
+// Links
+$link: $primary;
+$link-invert: $primary-invert;
+$link-focus-border: $primary;
+
+$navbar-item-img-max-height: 2rem;
+$navbar-height: 2.0rem;
+// Import Bulma and Buefy styles
+//@import "~bulma/sass/utilities/_all";
+@import "~bulma";
+@import "~buefy/src/scss/buefy";
