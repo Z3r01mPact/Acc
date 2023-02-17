@@ -17,7 +17,7 @@ services:
   database:
     container_name: pictalk-database
     build:
-      context: ../Pictalk-API-v2/
+      context: ./Pictalk-API-v2/
       dockerfile: Dockerfile_PostgreSQL
     image: pictalk-database
     environment:
@@ -30,13 +30,13 @@ services:
   backend:
     container_name: pictalk-backend
     build:
-      context: ../Pictalk-API-v2/
+      context: ./Pictalk-API-v2/
       dockerfile: Dockerfile_Nest
     image: pictalk-backend
     environment:
       DB_URL: database
     volumes:
-      - ../Pictalk-API-v2/:/app # Useful for hot reload
+      - ./Pictalk-API-v2/:/app # Useful for hot reload
       - /app/node_modules # Does not sync node_modules
     ports:
       - 3001:3001
